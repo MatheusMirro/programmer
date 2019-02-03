@@ -1,0 +1,56 @@
+package lanches;
+import java.util.Scanner;
+
+
+public class Lanches {
+
+    
+    public static void main(String[] args) {
+        
+        
+        int pedido;
+        Scanner leitura = new Scanner (System.in);
+        
+        
+        System.out.println("========== Barraca de Lanches ==========");
+        
+        System.out.println("Menu de Lanches");
+        System.out.println("1 - Trio XBacon");
+        System.out.println("2 - Trio XTudo");
+        System.out.println("3 - Trio XSalada");
+        System.out.println("4 - Pizza");
+        
+        System.out.println("Digite o numero do seu lanche: ");
+        
+        pedido = leitura.nextInt();
+        
+        switch(pedido){
+            
+            case 1:
+                System.out.println("Você escolheu - Trio XBacon");
+                System.out.println("Valor R$15,90");
+            break;
+            
+            case 2:
+                System.out.println("Você escolheu - Trio XTudo");
+                System.out.println("Valor R$17,80");
+                break;
+            case 3:
+                System.out.println("Você escolheu - Trio XSalada");
+                System.out.println("Valor R$12,50");
+                break;
+                
+            case 4:
+                System.out.println("Você escolheu - Pizza");
+                System.out.println("Valor R$25,00");
+                break;
+                
+            default:
+                System.out.println("Erro! Esse numero não existe no menu!");
+                 break;                       
+        }
+    
+        
+    }
+    
+}
