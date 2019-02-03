@@ -1,0 +1,50 @@
+package javaapplication33;
+import java.util.Scanner;
+
+
+public class Calculadora {
+    
+   public static void main (String [] args){
+       
+       System.out.println("========== Calculadora =========");    
+       Scanner leitura = new Scanner (System.in);
+       
+       double n1,n2,soma, divi, multi, sub;
+       int operacao;
+       
+       System.out.println("Digite o primeiro valor: ");
+       n1 = leitura.nextDouble();
+       System.out.println("Digite o segundo valor: ");
+       n2 = leitura.nextDouble();
+       
+       System.out.println("Que operação deseja realizar?");
+       System.out.println("1 - Soma");
+       System.out.println("2 - Subtração");
+       System.out.println("3 - Multiplicação");
+       System.out.println("4 - Divisão");
+       
+       System.out.println("Digite o numero da operação desejada!");
+       
+       operacao = leitura.nextInt();
+       
+       if (operacao == 1 ){
+           soma = n1 + n2;
+           System.out.println("O resultado da soma é: "+soma);
+       }
+       if (operacao == 2 ){
+           sub = n1 - n2;
+           System.out.println("O resultado da subtração é: "+sub);
+       }
+       if (operacao == 3 ){
+           multi = n1 * n2;
+           System.out.println("O resultado da multiplicação é: "+multi);
+       }
+       if (operacao == 4){
+           divi = n1 / n2;
+           System.out.println("O resultado da divisão é: "+divi);
+           
+       }
+     
+   }
+   
+}
